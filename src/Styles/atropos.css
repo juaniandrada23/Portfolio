@@ -1,0 +1,19 @@
+.atropos {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+img.ReactImage {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(2px 4px 0px #acbadd) drop-shadow(0 0 9px #0b0d13);
+}
