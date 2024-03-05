@@ -4,11 +4,6 @@
   height: 200px;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
-}
-
 img.ReactImage {
   left: 0;
   top: 0;
@@ -16,4 +11,22 @@ img.ReactImage {
   width: 200px;
   height: 200px;
   filter: drop-shadow(2px 4px 0px #acbadd) drop-shadow(0 0 9px #0b0d13);
+}
+
+img.HtmlImage {
+  left: 0;
+  top: 0px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(2px 4px 0px #c26213) drop-shadow(0 0 2px #b48a67);
+}
+
+img.CssImage {
+  left: 0;
+  top: 0px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  filter: drop-shadow(2px 4px 0px #367a96) drop-shadow(0 0 2px #98d8e4);
 }
