@@ -4,8 +4,13 @@ import Atropos from "atropos/react";
 import "atropos/atropos.css";
 import HtmlImage from "../../Images/html.png";
 import CssImage from "../../Images/css.png";
-import { FaHtml5, FaCss3  } from "react-icons/fa";
-
+import JsImage from "../../Images/js.png";
+import ReactImage from "../../Images/atropos.png";
+import MYSQLImage from "../../Images/mysql.png";
+import GITImage from "../../Images/git.png";
+import { FaHtml5, FaCss3, FaReact, FaGithub } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrMysql } from "react-icons/gr";
 
 const TechAtropos = () => {
   const techs = [
@@ -20,6 +25,30 @@ const TechAtropos = () => {
         scrLetter: CssImage,
         altLetter: 'CssImage',
         className: 'CssImage'
+    },
+    {
+      icon: <IoLogoJavascript className='w-full h-full p-4 text-white'/>,
+      scrLetter: JsImage,
+      altLetter: 'JsImage',
+      className: 'JsImage'
+    },
+    {
+      icon: <FaReact className='w-full h-full p-4 text-white'/>,
+      scrLetter: ReactImage,
+      altLetter: 'ReactImage',
+      className: 'ReactImage'
+    },
+    {
+      icon: <GrMysql className='w-full h-full p-4 text-white'/>,
+      scrLetter: MYSQLImage,
+      altLetter: 'MYSQLImage',
+      className: 'MYSQLImage'
+    },
+    {
+      icon: <FaGithub className='w-full h-full p-4 text-white'/>,
+      scrLetter: GITImage,
+      altLetter: 'GITImage',
+      className: 'GITImage'
     },
   ]
 
