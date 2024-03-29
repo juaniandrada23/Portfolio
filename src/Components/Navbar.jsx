@@ -65,8 +65,8 @@ const Navbar = () => {
 
           {!isMobile && (
             <div>
-              <button className='flex justify-center items-center bg-white p-2 rounded-full' onClick={handleDrawerOpenMax}>
-                <TiThMenu className='text-reno-900 h-6 w-6'/>
+              <button className='flex justify-center items-center bg-white p-2 rounded-full text-reno-900 hover:text-white hover:bg-reno-500 transition duration-500' onClick={handleDrawerOpenMax}>
+                <TiThMenu className='h-6 w-6'/>
               </button>
                   <Drawer transitionDuration={1600} anchor="right" open={drawerOpenMax} onClose={handleDrawerCloseMax} PaperProps={{ sx: { width: '100%', backgroundColor: 'rgba(11, 13, 19, 0.95)'}}}>
                   <div className='text-reno-50 flex justify-center h-full'>
@@ -89,14 +89,14 @@ const Navbar = () => {
                     <ListItem className='mt-4'>
                       <Link to="us" smooth={true} duration={500} offset={-15} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
-                          NOSOTROS
+                          ACERCA DE MI
                         </label>
                       </Link>
                     </ListItem>
                     <ListItem>
                       <Link to="menu" smooth={true} duration={500} offset={-59} className='group transition-all duration-300 ease-in-out'>
-                        <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
-                          MENÚ
+                        <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out uppercase'>
+                          tecnologías
                         </label>
                       </Link>
                     </ListItem>
@@ -145,14 +145,14 @@ const Navbar = () => {
           <ListItem>
             <Link to="us" smooth={true} duration={500} offset={-55}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
-                NOSOTROS
+                ACERCA DE MI
               </label>
             </Link>
           </ListItem>
           <ListItem>
             <Link to="menu" smooth={true} duration={500} offset={-29}>
-              <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
-                MENÚ
+              <label className='uppercase' onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
+                tecnologías
               </label>
             </Link>
           </ListItem>

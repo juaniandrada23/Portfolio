@@ -59,7 +59,7 @@ const Footer = () => {
             <ul className="items-center md:justify-center md:flex-row md:space-x-10 font-semibold xs:justify-between xs:flex-col xs:gap-2 mt-8 space-y-5 xs:flex xs:space-y-0">
                 {
                     footerNavs.map((item, idx) => (
-                        <li key={idx} className="hover:text-gray-800">
+                        <li key={idx} className="hover:text-reno-300">
                             <a href={item.href}>
                                 { item.name }
                             </a>
@@ -75,7 +75,7 @@ const Footer = () => {
                     <ul className="flex items-center space-x-4">
                         {
                             icons.map((item, idx) => (
-                                <li key={idx} className="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <li key={idx} className="w-10 h-10 border rounded-full flex items-center justify-center hover:text-reno-600 hover:bg-blue-100 transition duration-500">
                                     <a href={item.href}> 
                                         { item.icon }
                                     </a>
