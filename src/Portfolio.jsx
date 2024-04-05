@@ -5,16 +5,18 @@ import Welcome from './Components/Welcome.jsx'
 import About from './Components/About.jsx'
 import Tech from './Components/Tech.jsx'
 import Experience from './Components/Experience.jsx'
+import Contact from './Components/Contact.jsx'
 import './Styles/portfolio.css'
 
 const Portfolio = () => {
   return (
     <>
     <Navbar/>
-      <Welcome/>
-      <About/>
-      <Tech/>
-      <Experience/>
+      <Welcome id="inicio"/>
+      <About id="about"/>
+      <Tech id='tech'/>
+      <Experience id='xp'/>
+      <Contact id='contact'/>
     <Footer/>
     </>
   )

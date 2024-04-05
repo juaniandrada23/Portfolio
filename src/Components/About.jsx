@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-    <div className='md:h-screen xs:h-1/2 bg-reno-100 relative'>
+    <div id='about' className='md:h-screen xs:h-1/2 bg-reno-100 relative'>
 
       <div className='flex md:justify-start xs:justify-center'> 
         <span className='text-reno-950 text-4xl mt-4 md:ml-5 xs:my-2 font-semibold'>Acerca de mi</span>
