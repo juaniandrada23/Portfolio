@@ -108,7 +108,7 @@ const Navbar = () => {
                       </Link>
                     </ListItem>
                     <ListItem className='mb-4'>
-                      <Link to="contacto" smooth={true} duration={500} offset={-40} className='group transition-all duration-300 ease-in-out'>
+                      <Link to="contact" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
                           CONTACTO
                         </label>
@@ -150,23 +150,23 @@ const Navbar = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="tech" smooth={true} duration={500} offset={-70}>
+            <Link to="tech" smooth={true} duration={500} offset={-75}>
               <label className='uppercase' onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 tecnologías
               </label>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="xp" smooth={true} duration={500} offset={-70}>
+            <Link to="xp" smooth={true} duration={500} offset={-75}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 EXPERIENCIA
               </label>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="contacto" smooth={true} duration={500} offset={-40}>
+            <Link to="contact" smooth={true} duration={500} offset={-75}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
-                CONTACTO2
+                CONTACTO
               </label>
             </Link>
           </ListItem>
