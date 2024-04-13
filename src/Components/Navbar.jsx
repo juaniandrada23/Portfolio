@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: '#0b0d13'}}>
+      <AppBar position="sticky" sx={{ backgroundColor: '#0b0d13'}}>
         <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
           <div className='bg-white rounded-full xs:my-4 md:my-3'>
             <img src={logoJuani} alt="Logo" className='md:w-8 md:h-8 xs:w-8 xs:h-8 m-2'/>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   <List>
                     <div className='flex flex-row mb-4'>
                       <ListItem style={{ marginTop: '20px' }}>
-                        <Link to="inicio" smooth={true} duration={500}>
+                        <Link to="inicio" smooth={true} duration={500} offset={-100}>
                           <Button variant="h6" sx={{textTransform: 'uppercase' }} style={{borderRadius: '50px', backgroundColor: 'white', boxShadow: '0px 15px 15px -15px rgba(0, 0, 0, 1)' }} onClick={handleDrawerCloseMax}>
                             <HomeIcon sx={{ fontSize: '6vh' }} className='text-reno-900'/>
                           </Button>
