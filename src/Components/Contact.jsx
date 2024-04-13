@@ -6,29 +6,38 @@ const CustomTextField = ({ label, ...props }) => {
   return (
     <TextField
       label={label}
-      variant="standard"
+      variant="filled"
       sx={{
-        "& .MuiInput-root": {
-          color: "#d3d9ee",
-          fontFamily: "Arial",
-          fontWeight: "bold",
-          // Bottom border
-          "&:before": {
-            borderColor: "#d3d9ee",
+        '&.MuiTextField-root:hover .MuiInputLabel-filled': {
+          color: '#d3d9ee', // Cambia el color del texto del label al pasar el ratón sobre el TextField
+        },
+        '& .MuiFilledInput-root': {
+          backgroundColor: '#d3d9ee', // Color de fondo
+          borderRadius: '8px', // Bordes redondeados
+          transition: 'background-color 0.3s ease-in-out', // Transición suave del color de fondo
+          '&:hover': {
+            backgroundColor: '#2c406d', // Color de fondo al pasar el ratón
           },
-          "&:after": {
-            borderColor: "#d3d9ee",
-          },
-          ":hover:not(.Mui-focused)": {
-            "&:before": {
-              borderColor: "#4f73b5",
-            },
+          '&:hover .MuiFilledInput-input': {
+            color: '#d3d9ee', // Color del texto del input al pasar el ratón
           },
         },
-        // Label
-        "& .MuiInputLabel-standard": {
-          color: "#d3d9ee",
-          fontWeight: "bold",
+        '& .MuiInputLabel-filled': {
+          color: '#4f73b5', // Color del texto de la etiqueta
+          fontWeight: 'bold',
+          transition: 'color 0.3s ease-in-out', // Transición suave del color del texto de la etiqueta
+        },
+        '& .MuiFilledInput-input': {
+          color: '#1c2640', // Color del texto del input
+        },
+        '& .MuiFilledInput-underline:before': {
+          borderBottomColor: 'transparent', // Ocultar línea de fondo
+        },
+        '& .MuiFilledInput-underline:after': {
+          borderBottomColor: 'transparent', // Ocultar línea de fondo después de escribir
+        },
+        '& .MuiFilledInput-underline:hover:not(.Mui-disabled):before': {
+          borderBottomColor: 'transparent', // Ocultar línea de fondo al pasar el ratón
         },
       }}
       {...props}
@@ -46,24 +55,18 @@ const Contact = () => {
                 <span className='text-reno-50 text-4xl mt-4 md:ml-5 xs:my-2 font-semibold'>Contacto</span>
             </div>
 
-            <div className='flex flex-col relative'>
-                <div className="absolute inset-0 bg-reno-700 opacity-60 z-10"></div>
-                <img src={fondoCiudad} alt="FondoCiudad" style={{height:'90vh'}} className='md:object-cover xs:object-cover xs:object-right md:object-center relative z-0'/>
-                
-                <div className="absolute z-20 inset-0">
-                    <form className="flex flex-col md:items-center justify-center w-full h-full">
-                      <div className='grid md:grid-cols-12 xs:grid-cols-1 gap-4 bg-reno-900/70 md:p-10 md:mx-0 xs:p-5 xs:mx-10 rounded-xl backdrop-blur-sm'> 
-                        <div className='flex flex-col md:col-span-4 gap-3'>
+            <div className='flex flex-col relative'>                
+                <div id='formulario' className="relative z-20 flex items-center justify-center w-full h-full bg-cover bg-center bg-reno-700 bg-opacity-60" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${fondoCiudad})` }}>
+                    <form className="flex flex-col md:items-center justify-center w-full h-full my-7">
+                      <div className='grid xs:grid-cols-1 gap-5 md:w-1/3 bg-reno-900/70 md:p-10 md:mx-0 xs:p-5 xs:mx-6 rounded-xl backdrop-blur-sm'> 
                           <CustomTextField label="Nombre" />
                           <CustomTextField label="Apellido" />
-                        </div>
-                        <div className='flex flex-col md:col-span-8'> 
-                          <input type="email" placeholder="Email" className="bg-white border-2 border-gray-300 rounded-lg mb-4 px-4 py-2" />
-                          <textarea placeholder="Mensaje" className="bg-white border-2 border-gray-300 rounded-lg mb-4 px-4 py-2 resize-none h-32"></textarea>
+                          <CustomTextField label="Email" />
+                          <CustomTextField label="Asunto" />
+                          <CustomTextField label="Mensaje" multiline rows={4}/>
                           <div className='flex flex-row justify-center'>
-                            <button type="submit" className="bg-blue-500 text-white font-semibold px-8 py-2 rounded-lg transition duration-300 hover:bg-blue-600 md:w-1/3">Confirmar</button>
+                            <button type="submit" className="bg-reno-500 text-white font-bold px-4 py-2 rounded-lg transition duration-300 hover:bg-reno-600 border-reno-100 border-2">Confirmar</button>
                           </div>
-                        </div>
                       </div>
                     </form>
                 </div>

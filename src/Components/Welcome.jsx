@@ -27,7 +27,7 @@ const Welcome = () => {
           <h3 className='text-3xl md:text-4xl cel:text-3xl xs:text-2xl px-2 md:px-10 text-reno-50 font-bold text-center'>Desarrollador FullStack</h3>
         </div>
         <div className='flex flex-col items-end justify-end xs:pb-3'>
-          <Link to="about" offset={-68} smooth={true} duration={500}>
+          <Link to="about" offset={-80} smooth={true} duration={500}>
             <button>
               <FaHandPointDown className='animate-bounce text-white w-10 h-10'/>
             </button>

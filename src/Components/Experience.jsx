@@ -25,7 +25,7 @@ const Experience = () => {
               <div className='ml-2 my-3 bg-reno-50 rounded-lg p-3'>
                   <h1>Estudiante de la carrera de Ing. En Sistemas de Informacion</h1>
                   <div className='flex justify-end mt-2'>
-                    <button className='bg-reno-800 p-1 px-2 rounded-xl'><FcDiploma1 className='text-3xl'/></button>
+                    <button className='bg-reno-800 p-1 px-2 rounded-xl hover:bg-reno-800/70'><FcDiploma1 className='text-3xl'/></button>
                   </div>
               </div>
               <div className='flex flex-row justify-between'>
@@ -37,7 +37,7 @@ const Experience = () => {
               <div className='ml-2 my-3 bg-reno-50 rounded-lg p-3'>
                   <h1>Programador FullStack</h1>
                   <div className='flex justify-end mt-2'>
-                    <button className='bg-reno-800 p-1 px-2 rounded-xl hover:bg-reno-800/30'><FcDiploma1 className='text-3xl'/></button>
+                    <button className='bg-reno-800 p-1 px-2 rounded-xl hover:bg-reno-800/70'><FcDiploma1 className='text-3xl'/></button>
                   </div>
               </div>
           </div>
