@@ -74,7 +74,7 @@ const Navbar = () => {
                     <div className='flex flex-row mb-4'>
                       <ListItem style={{ marginTop: '20px' }}>
                         <Link to="inicio" smooth={true} duration={500} offset={-100}>
-                          <Button variant="h6" sx={{textTransform: 'uppercase' }} style={{borderRadius: '50px', backgroundColor: 'white', boxShadow: '0px 15px 15px -15px rgba(0, 0, 0, 1)' }} onClick={handleDrawerCloseMax}>
+                          <Button variant="h6" style={{borderRadius: '50px', backgroundColor: 'white', boxShadow: '0px 15px 15px -15px rgba(0, 0, 0, 1)' }} onClick={handleDrawerCloseMax}>
                             <HomeIcon sx={{ fontSize: '6vh' }} className='text-reno-900'/>
                           </Button>
                         </Link>

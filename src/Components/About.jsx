@@ -1,64 +1,50 @@
-import React from 'react'
-import backend from '../Images/backendImage.png'
-import frontend from '../Images/frontendImage.png'
-import sistemas from '../Images/sistemasImage.png'
+import React from 'react';
+import backend from '../Images/backendImage.png';
+import frontend from '../Images/frontendImage.png';
+import sistemas from '../Images/sistemasImage.png';
 
 const About = () => {
-
-
   return (
-    <>
-    <div id='about' className='md:h-screen xs:h-1/2 bg-reno-100 relative'>
-
-      <div className='flex md:justify-start xs:justify-center'> 
-        <span className='text-reno-950 text-4xl mt-4 md:ml-5 xs:my-2 font-semibold'>Acerca de mi</span>
+    <div id='about' className='md:min-h-screen xs:min-h-0 bg-gradient-to-b from-gray-900 to-gray-800 relative'>
+      <div className='flex md:justify-start xs:justify-center items-center h-32 bg-gradient-to-l from-reno-950 to-gray-800'> 
+        <span className='text-4xl mt-4 md:ml-5 xs:my-2 font-semibold text-reno-50'>Acerca de mi</span>
       </div>
 
-      <div className='grid md:grid-cols-3 gap-4 xs:grid-cols-1 relative z-10 justify-center items-center md:mt-4'>
-        <div className="bg-reno-600 mx-4 rounded-3xl shadow-md shadow-reno-300">
-          <h1 className='text-reno-100 mx-8 my-4 text-justify text-lg'>
-            <span className='px-6'>
-              Bienvenidos, soy Juan Ignacio, estudiante de último año de Ingeniería en Sistemas en la UTN FRC. Con experiencia personal en programación y desarrollo de software, busco emplear mis habilidades en soluciones innovadoras aplicadas en el entorno laboral. He participado en proyectos personales y realizado cursos autodidactas por mi cuenta. 
-            </span>
-            <br />
-            <span className='px-6'>
-              Mi objetivo es contribuir al avance tecnológico de cualquier empresa y seguir aprendiendo en el campo laboral.
-            </span>
-          </h1>
+      <div className='grid md:grid-cols-3 gap-8 xs:grid-cols-1 relative z-10 justify-center items-center xs:mt-6 md:mt-4'>
+        <div className="bg-gray-800 mx-4 md:mx-8 rounded-lg shadow-lg p-9">
+          <h2 className='text-white text-lg md:text-xl font-semibold mb-4'>
+            ¡Hola! Soy Juan Ignacio.
+          </h2>
+          <p className='text-gray-400 text-base md:text-lg leading-relaxed'>
+            Bienvenidos a mi espacio. Soy un apasionado estudiante de Ingeniería en Sistemas con una sólida experiencia en programación y desarrollo de software. Mi objetivo es aplicar mis habilidades para crear soluciones innovadoras y contribuir al avance tecnológico en cualquier empresa.
+          </p>
         </div>
 
-        <div className="md:col-span-2 bg-reno-600 mx-4 rounded-3xl relative z-10 shadow-md shadow-reno-300 xs:mb-10">
-          <h1 className='text-center text-reno-100 pt-2 text-3xl font-semibold'>Roles</h1>
-          <div className='grid md:grid-cols-3 xs:grid-cols-1 gap-4 xs:mx-2 xs:pb-3 xs:pt-1 text-center'>
-            <div className='bg-white md:ml-2 rounded-lg xs:mx-12 md:mx-0 flex items-center flex-col'>
-              <h1 className='xs:text-xl pt-2'>Estudiante de Ing. En Sistemas</h1>
-              <div>
-                <img src={sistemas} alt="imagenSistemas" className='xs:w-36 xs:h-36'/>
-              </div>
+        <div className="md:col-span-2 bg-gray-800 mx-4 md:mx-8 rounded-lg shadow-lg p-6">
+          <h2 className='text-white text-center text-3xl md:text-4xl font-bold mb-6'>Roles</h2>
+          <div className='grid md:grid-cols-3 xs:grid-cols-1 gap-6 text-center'>
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Estudiante de Ing. En Sistemas</h3>
+              <img src={sistemas} alt="imagenSistemas" className='w-40 h-40 mx-auto'/>
             </div>
-            <div className='bg-white rounded-lg xs:mx-12 md:mx-0 flex items-center flex-col'>
-              <h1 className='xs:text-xl pt-2'>Backend Developer</h1>
-              <div>
-                <img src={backend} alt="imagenBackend" className='xs:w-36 xs:h-36'/>
-              </div>
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Backend Developer</h3>
+              <img src={backend} alt="imagenBackend" className='w-40 h-40 mx-auto'/>
             </div>
-            <div className='bg-white md:mr-2 rounded-lg xs:mx-12 md:mx-0  flex items-center flex-col'>
-              <h1 className='xs:text-xl pt-2'>Frontend Developer</h1>
-              <div>
-                <img src={frontend} alt="imagenFrontend" className='xs:w-36 xs:h-36'/>
-              </div>
+            <div className='bg-white rounded-lg shadow-md p-6'>
+              <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Frontend Developer</h3>
+              <img src={frontend} alt="imagenFrontend" className='w-40 h-40 mx-auto'/>
             </div>
           </div>
         </div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-full z-0">
-        <div className="absolute bottom-0 left-0 w-full h-full" style={{ clipPath: 'polygon(100% 19%, 100% 100%, 0 100%, 0 81%)', backgroundColor: '#0b0d13'}}>
+        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-gray-900 to-gray-800" style={{ clipPath: 'polygon(100% 19%, 100% 100%, 0 100%, 0 81%)'}}>
         </div>
       </div>
     </div>
-    </>  
-  )
+  );
 }
 
-export default About
+export default About;

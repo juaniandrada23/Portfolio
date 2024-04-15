@@ -56,7 +56,7 @@ const TechAtropos = () => {
     <>
         {
             techs.map((item, idx) => (
-            <Atropos key={idx} className="atropos bg-reno-900 rounded-3xl transition ease-in-out delay-100 duration-300" duration={200} shadowScale={0.3} shadowOffset={75} activeOffset={79} highlight={false}>
+            <Atropos key={idx} className="atropos bg-reno-800 hover:bg-reno-700 rounded-3xl transition ease-in-out delay-100 duration-300" duration={200} shadowScale={0.3} shadowOffset={75} activeOffset={79} highlight={false}>
                 {item.icon}
                 <img data-atropos-offset="5" className={item.className} src={item.scrLetter} alt={item.altLetter} />
             </Atropos>
