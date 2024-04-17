@@ -9,7 +9,8 @@ img.HtmlImage,
 img.CssImage,
 img.JsImage,
 img.MYSQLImage,
-img.GITImage {
+img.GITImage,
+img.AwsImage {
   left: 0;
   top: 0;
   position: absolute;
@@ -29,7 +30,8 @@ img.GITImage {
   img.CssImage,
   img.JsImage,
   img.MYSQLImage,
-  img.GITImage {
+  img.GITImage,
+  img.AwsImage {
     left: 0;
     top: 0;
     width: 150px;

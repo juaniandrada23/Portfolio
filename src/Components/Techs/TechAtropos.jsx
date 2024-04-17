@@ -8,7 +8,8 @@ import JsImage from "../../Images/js.png";
 import ReactImage from "../../Images/atropos.png";
 import MYSQLImage from "../../Images/mysql.png";
 import GITImage from "../../Images/git.png";
-import { FaHtml5, FaCss3, FaReact, FaGithub } from "react-icons/fa";
+import AwsImage from "../../Images/aws.png"
+import { FaHtml5, FaCss3, FaReact, FaGithub, FaAws } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";
 
@@ -50,6 +51,12 @@ const TechAtropos = () => {
       altLetter: 'GITImage',
       className: 'GITImage'
     },
+    {
+      icon: <FaAws className='w-full h-full p-4 text-white'/>,
+      scrLetter: AwsImage,
+      altLetter: 'AwsImage',
+      className: 'AwsImage'
+    },
   ]
 
   return (
@@ -62,8 +69,6 @@ const TechAtropos = () => {
             </Atropos>
             ))
         }
-
-
     </>
   )
 }
