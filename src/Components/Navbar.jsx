@@ -87,21 +87,21 @@ const Navbar = () => {
                     </div>
                     <div className='gap-8 border-l-4 border-reno-300 ml-2 flex justify-center flex-col'>
                     <ListItem className='mt-4'>
-                      <Link to="about" smooth={true} duration={500} offset={-68} className='group transition-all duration-300 ease-in-out'>
+                      <Link to="about" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
                           ACERCA DE MI
                         </label>
                       </Link>
                     </ListItem>
                     <ListItem>
-                      <Link to="tech" smooth={true} duration={500} offset={-59} className='group transition-all duration-300 ease-in-out'>
+                      <Link to="tech" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out uppercase'>
                           tecnologías
                         </label>
                       </Link>
                     </ListItem>
                     <ListItem>
-                      <Link to="xp" smooth={true} duration={500} offset={-55} className='group transition-all duration-300 ease-in-out'>
+                      <Link to="xp" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
                           EXPERIENCIA
                         </label>
@@ -143,28 +143,28 @@ const Navbar = () => {
           </div>
           <div className='border-l-4 border-reno-300 ml-2'>
           <ListItem>
-            <Link to="about" smooth={true} duration={500} offset={-80}>
+            <Link to="about" smooth={true} duration={500} offset={-79}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 ACERCA DE MI
               </label>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="tech" smooth={true} duration={500} offset={-75}>
+            <Link to="tech" smooth={true} duration={500} offset={-80}>
               <label className='uppercase' onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 tecnologías
               </label>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="xp" smooth={true} duration={500} offset={-75}>
+            <Link to="xp" smooth={true} duration={500} offset={-80}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 EXPERIENCIA
               </label>
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="contact" smooth={true} duration={500} offset={-75}>
+            <Link to="contact" smooth={true} duration={500} offset={-80}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 CONTACTO
               </label>

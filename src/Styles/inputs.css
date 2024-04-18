@@ -26,9 +26,12 @@
 
 .input-style::placeholder {
   color: #223153;
+  opacity: 0.5;
 }
 
+
 .input-style:hover::placeholder {
-  color: #d3d9ee; 
+  color: white;
+  opacity: 0.6; 
 }
 

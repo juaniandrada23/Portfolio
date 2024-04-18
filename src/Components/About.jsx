@@ -10,8 +10,8 @@ const About = () => {
         <span className='text-4xl mt-4 md:ml-5 xs:my-2 font-semibold text-reno-50'>Acerca de mi</span>
       </div>
 
-      <div className='grid md:grid-cols-3 gap-8 xs:grid-cols-1 relative z-10 justify-center items-center xs:mt-6 md:mt-4'>
-        <div className="bg-gray-800 mx-4 md:mx-8 rounded-lg shadow-lg p-9">
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 xs:grid-cols-1 gap-8 relative z-10 justify-center items-center xs:mt-6 md:mt-4 lg:mt-0'>
+        <div className="bg-gray-800 rounded-lg shadow-lg md:col-span-2 lg:col-span-3 lg:mx-80 lg:mt-10 md:mx-44 md:mt-4 xs:mx-4 p-9">
           <h2 className='text-white text-lg md:text-xl font-semibold mb-4'>
             ¡Hola! Soy Juan Ignacio.
           </h2>
@@ -20,18 +20,18 @@ const About = () => {
           </p>
         </div>
 
-        <div className="md:col-span-2 bg-gray-800 mx-4 md:mx-8 rounded-lg shadow-lg p-6">
-          <h2 className='text-white text-center text-3xl md:text-4xl font-bold mb-6'>Roles</h2>
-          <div className='grid md:grid-cols-3 xs:grid-cols-1 gap-6 text-center'>
-            <div className='bg-white rounded-lg shadow-md p-6'>
+        <div className="md:col-span-2 lg:col-span-3 bg-gray-800 mx-4 md:mx-8 rounded-lg shadow-lg p-6 xs:mb-10 md:mb-10 lg:mb-10 lg:mx-64">
+          <h2 className='text-white text-center text-3xl md:text-3xl underline underline-offset-4 font-bold mb-6'>Roles</h2>
+          <div className='flex justify-center flex-wrap gap-6 text-center'>
+            <div className='bg-white rounded-lg shadow-md xl:w-1/3 md:w-3/5 xs:w-3/4 p-2'>
               <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Estudiante de Ing. En Sistemas</h3>
               <img src={sistemas} alt="imagenSistemas" className='w-40 h-40 mx-auto'/>
             </div>
-            <div className='bg-white rounded-lg shadow-md p-6'>
+            <div className='bg-white rounded-lg shadow-md xl:w-1/3 md:w-3/5 xs:w-3/4 p-2'>
               <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Backend Developer</h3>
               <img src={backend} alt="imagenBackend" className='w-40 h-40 mx-auto'/>
             </div>
-            <div className='bg-white rounded-lg shadow-md p-6'>
+            <div className='bg-white rounded-lg shadow-md xl:w-1/3 md:w-3/5 xs:w-3/4 p-2'>
               <h3 className='text-gray-900 text-lg md:text-xl font-semibold mb-4'>Frontend Developer</h3>
               <img src={frontend} alt="imagenFrontend" className='w-40 h-40 mx-auto'/>
             </div>
