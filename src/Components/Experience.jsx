@@ -13,7 +13,7 @@ const Experience = () => {
         </div>
       </ParallaxBanner>
 
-      <div className='flex justify-center items-center flex-col bg-gradient-to-t from-gray-900 to-gray-800'>
+      <div className='flex justify-center items-center h-screen flex-col bg-gradient-to-t from-gray-900 to-gray-800'>
         <div className='bg-reno-900 p-4 m-5 rounded-r-3xl rounded-es-3xl shadow-md shadow-black'>
           <div className='border-l-4 border-reno-500 m-4'>
               <div className='flex flex-row justify-between'>

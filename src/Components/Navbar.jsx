@@ -107,6 +107,13 @@ const Navbar = () => {
                         </label>
                       </Link>
                     </ListItem>
+                    <ListItem>
+                      <Link to="proyects" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
+                        <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
+                          PROYECTOS
+                        </label>
+                      </Link>
+                    </ListItem>
                     <ListItem className='mb-4'>
                       <Link to="contact" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
@@ -160,6 +167,13 @@ const Navbar = () => {
             <Link to="xp" smooth={true} duration={500} offset={-80}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 EXPERIENCIA
+              </label>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link to="proyects" smooth={true} duration={500} offset={-80}>
+              <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
+                PROYECTOS
               </label>
             </Link>
           </ListItem>
