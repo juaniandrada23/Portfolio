@@ -9,15 +9,15 @@ const Experience = () => {
     <div id='xp' className='w-full'>
       <ParallaxBanner layers={[{ image: imagenExp, speed: 15}, ]} style={{height: '130px',}}>
         <div className="absolute inset-0 flex items-center md:justify-start xs:justify-center bg-opacity-65 bg-reno-800">
-          <h1 className="text-4xl font-semibold text-reno-50 md:ml-5 ">Expeciencia</h1>
+          <h1 className="text-4xl font-semibold text-white md:ml-5 ">Expeciencia</h1>
         </div>
       </ParallaxBanner>
 
-      <div className='flex justify-center items-center h-screen flex-col bg-gradient-to-t from-gray-900 to-gray-800'>
-        <div className='bg-reno-900 p-4 m-5 rounded-r-3xl rounded-es-3xl shadow-md shadow-black'>
-          <div className='border-l-4 border-reno-500 m-4'>
+      <div className='flex justify-center items-center h-screen flex-col bg-gradient-to-t from-reno-900 to-reno-800'>
+        <div className='bg-reno-600 p-4 m-5 rounded-r-3xl rounded-es-3xl shadow-md shadow-black'>
+          <div className='border-l-4 border-reno-400 m-4'>
               <div className='flex flex-row justify-between'>
-                <img src={UTN} alt='logoUTN' className='bg-white rounded-r-lg w-14 h-14 border-y-4 border-r-4 border-reno-500'/>
+                <img src={UTN} alt='logoUTN' className='bg-white rounded-r-lg w-14 h-14 border-y-4 border-r-4 border-reno-400'/>
                 <div className='bg-white text-reno-950 font-extrabold text-center flex items-center rounded-xl p-2'>
                   <h1>2019-ACT</h1>
                 </div>
@@ -29,7 +29,7 @@ const Experience = () => {
                   </div>
               </div>
               <div className='flex flex-row justify-between'>
-                <img src={UTN} alt='logoUTN' className='bg-white rounded-r-lg w-14 h-14 border-y-4 border-r-4 border-reno-500'/>
+                <img src={UTN} alt='logoUTN' className='bg-white rounded-r-lg w-14 h-14 border-y-4 border-r-4 border-reno-400'/>
                 <div className='bg-white text-reno-950 font-extrabold text-center flex items-center rounded-xl p-2'>
                   <h1>2021-2022</h1>
                 </div>

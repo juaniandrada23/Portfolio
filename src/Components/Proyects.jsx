@@ -1,29 +1,52 @@
-import React from 'react'
+import React from "react";
+import imagenAppFolledo from "../Images/imagenAppFolledo.JPG";
 
-const Proyects = () => {
+const ProjectCard = ({ title, img }) => {
+  const cardStyle = {
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center 10%",
+  };
+
   return (
-    <div id='proyects' className='h-screen bg-gradient-to-b from-gray-900 to-gray-800'>
-        <div className='w-full h-full flex flex-col'>
-            <div className='flex md:justify-start py-6 xs:justify-center xs:items-center bg-gradient-to-l from-reno-950 to-gray-800 h-32'>
-                <span className='text-4xl mt-4 md:ml-5 xs:my-2 font-semibold text-reno-50'>Proyectos</span>
-            </div>
-            <div className='w-full h-full grid md:grid-cols-4 xs:grid-cols-1 my-10'>
-              <div className='bg-reno-50 h-full flex justify-center items-center skew-y-12 transition hover:skew-y-0 hover:duration-700'>
-                <h1 className='text-reno-900'>Columna 1</h1>
-              </div>
-              <div className='bg-reno-100 h-full flex justify-center items-center skew-y-12 transition hover:skew-y-0 hover:duration-700'>
-                <h1 className='text-reno-900'>Columna 2</h1>
-              </div>
-              <div className='bg-reno-200 h-full flex justify-center items-center skew-y-12 transition hover:skew-y-0 hover:duration-700'>
-                <h1 className='text-reno-900'>Columna 3</h1>
-              </div>
-              <div className='bg-reno-300 h-full flex justify-center items-center skew-y-12 transition hover:skew-y-0 hover:duration-700'>
-                <h1 className='text-reno-900'>Columna 4</h1>
-              </div>
-            </div>
+    <div
+      style={cardStyle}
+      className="bg-reno-50 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:scale-105 relative overflow-hidden"
+    >
+      <div className="p-6 bg-reno-700">
+        <div className="rounded-lg">
+          <h2 className="text-xl font-bold text-white">{title}</h2>
+          <p className="mt-2 text-reno-50">Descripción breve del proyecto.</p>
         </div>
+      </div>
+      <div className="text-reno-50 mx-4 my-4">
+        <span>
+          Bueno aca vamos a poner una breve funcionalidad y los botones
+        </span>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Proyects
+const Projects = () => {
+  return (
+    <div
+      id="proyect"
+      className="min-h-screen bg-reno-900 flex flex-col text-reno-950"
+    >
+      <div className="flex md:justify-start py-6 xs:justify-center xs:items-center bg-gradient-to-l from-reno-950 to-reno-800 h-32">
+        <span className="text-4xl mt-4 md:ml-5 xs:my-2 font-semibold text-white">
+          Proyectos
+        </span>
+      </div>
+      <div className="flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+        <ProjectCard title="Proyecto 1" img={imagenAppFolledo} />
+        <ProjectCard title="Proyecto 2" />
+        <ProjectCard title="Proyecto 3" />
+        <ProjectCard title="Proyecto 4" />
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
