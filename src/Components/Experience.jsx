@@ -69,7 +69,7 @@ const Experience = () => {
       </ParallaxBanner>
 
       <div className="flex justify-center items-center flex-col bg-gradient-to-t from-reno-900 to-reno-800">
-        <div className="bg-reno-600 p-4 m-5 rounded-r-3xl rounded-es-3xl shadow-md shadow-black">
+        <div className="bg-reno-600 p-4 xs:my-10 xs:mx-6 md:mx-0 md:my-16 rounded-r-3xl rounded-es-3xl shadow-md shadow-black">
           <div className="border-l-4 border-reno-400 m-4">
             {experiences.map((experience, index) => (
               <div key={index}>
@@ -87,9 +87,8 @@ const Experience = () => {
                   <h1>{experience.description}</h1>
                   <div className="flex justify-end mt-2">
                     <button
-                      className={`bg-reno-800 p-1 px-2 rounded-xl text-reno-50 hover:bg-reno-300 hover:text-reno-950 transition duration-500 ${
-                        index === 0 ? "opacity-50 cursor-not-allowed" : ""
-                      }`}
+                      className={`bg-reno-800 p-1 px-2 rounded-xl text-reno-50 hover:bg-reno-50 border-2 hover:border-reno-700 hover:text-reno-950 transition duration-500 ${index === 0 ? "opacity-50 cursor-not-allowed" : ""
+                        }`}
                       onClick={() =>
                         handleButtonClick(
                           experience.message,
@@ -99,7 +98,7 @@ const Experience = () => {
                       }
                       disabled={index === 0}
                     >
-                      <TbCertificate className="text-3xl" />
+                      <TbCertificate className="w-7 h-7" />
                     </button>
                   </div>
                 </div>
