@@ -13,9 +13,9 @@ const Contact = () => {
             </div>
 
             <div className='flex flex-col relative'>                
-                <div id='formulario' className="relative z-20 flex items-center justify-center w-full h-full bg-cover bg-center" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${fondoCiudad})` }}>
+                <div id='formulario' className="relative z-20 flex items-center justify-center w-full h-full bg-cover bg-center" style={{ backgroundImage: `linear-gradient(rgba(28, 38, 64, 0.7), rgba(11, 13, 19, 1)), url(${fondoCiudad})` }}>
                     <form className="flex flex-col md:items-center justify-center w-full h-full my-7">
-                      <div className='grid xs:grid-cols-1 md:w-1/3 bg-reno-700/80 md:px-10 md:mx-0 xs:p-5 xs:mx-6 rounded-xl backdrop-blur-sm'> 
+                      <div className='grid xs:grid-cols-1 md:w-2/3 lg:w-1/3 bg-reno-700/90 md:px-10 md:mx-0 xs:p-5 xs:mx-6 rounded-xl backdrop-blur-lg'> 
                           <div className="flex flex-col gap-2">
                             <h1 className='text-reno-50'>Nombre</h1>
                             <input type="text" placeholder="Ingrese el nombre" className="input-style" />

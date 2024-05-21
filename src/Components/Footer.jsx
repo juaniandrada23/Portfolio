@@ -24,7 +24,7 @@ const Footer = () => {
             name: 'Expeciencia'
         },
         {
-            to: 'about',
+            to: 'proyect',
             offset: -70,
             href: 'Proyectos section',
             name: 'Proyectos'
@@ -62,7 +62,7 @@ const Footer = () => {
 
   return (
       <>
-        <footer className="text-reno-50 bg-reno-950 px-4 py-5 mx-auto md:px-8">
+        <footer className="text-reno-50 bg-reno-900 px-4 py-5 mx-auto md:px-8">
             <div className="max-w-lg xs:mx-auto xs:text-justify xs:px-8">
                 <img alt='logoJuani' src={logoJuani} className="w-20 xs:mx-auto bg-white pl-2 rounded-xl" />
                 <p className="leading-relaxed mt-2 text-[15px] xs:mt-4">

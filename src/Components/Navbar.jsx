@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ backgroundColor: '#0b0d13'}}>
+      <AppBar position="sticky" sx={{ backgroundColor: '#182034'}}>
         <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
           <div className='bg-white rounded-full xs:my-4 md:my-3'>
             <img src={logoJuani} alt="Logo" className='md:w-8 md:h-8 xs:w-8 xs:h-8 m-2'/>
