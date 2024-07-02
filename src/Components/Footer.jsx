@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import logoJuani from '../Images/LogoJuani.png'
 import { Link } from 'react-scroll';
 
@@ -24,7 +24,7 @@ const Footer = () => {
             name: 'Expeciencia'
         },
         {
-            to: 'proyect',
+            to: 'project',
             offset: -70,
             href: 'Proyectos section',
             name: 'Proyectos'
@@ -40,19 +40,11 @@ const Footer = () => {
   
     const icons = [
         {
-            href: '',
-            icon: <FaInstagram className='w-6 h-6'/>
-        },
-        {
-            href: '',
-            icon: <FaFacebook className='w-6 h-6'/>
-        },
-        {
-            href: '',
+            href: 'https://www.linkedin.com/in/juanignacioandradacabo/',
             icon: <FaLinkedin className='w-6 h-6'/>
         },
         {
-            href: '',
+            href: 'https://github.com/juaniandrada23',
             icon: <FaGithub className='w-6 h-6'/>
         }
     ]
@@ -83,8 +75,9 @@ const Footer = () => {
                 }
             </ul>
             <div className="mt-8 items-center justify-between xs:flex font-black">
-                <div className="mt-4 xs:mt-0">
-                    &copy; {year} Juan Ignacio Andrada Cabo.
+                <div className="mt-4 xs:mt-0 flex flex-col">
+                    &copy; {year}
+                    <h1>Juan Ignacio Andrada Cabo.</h1>
                 </div>
                 <div className="mt-6 xs:mt-0">
                     <ul className="flex items-center space-x-4">

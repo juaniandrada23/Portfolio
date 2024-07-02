@@ -1,0 +1,145 @@
+    * {
+    box-sizing: border-box;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }  
+
+  .modal-1-overlay,
+  .modal-1-modal {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  
+  @keyframes overlay-in {
+    0% {
+      scale: 0 0.004;
+    }
+    33% {
+      scale: 1 0.004;
+    }
+    66%,
+    100% {
+      scale: 1 1;
+    }
+  }
+  
+  .modal-1-overlay {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 75%);
+    display: grid;
+    place-items: center;
+  }
+  
+  .modal-1-overlay.open {
+    visibility: visible;
+    opacity: 1;
+    animation: overlay-in 1s both;
+  }
+  
+  @keyframes modal-in {
+    0%,
+    66% {
+      opacity: 0;
+      visibility: hidden;
+      translate: -50% -40%;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .modal-1-modal {
+    z-index: 2;
+    width: 430px;
+    top: 50%;
+    left: 50%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 0 20px 10px;
+    translate: -50% -50%;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 24%);
+  }
+  
+  @media (min-width: 1000px) {
+    .modal-1-modal {
+      z-index: 2;
+      width: 370px;
+      top: 57%;
+      left: 50%;    
+      padding: 0 20px 10px;
+    }
+
+    .img {
+      width: 400px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .modal-1-modal {
+      width: 400px;
+      top: 55%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .modal-1-modal {
+      width: 330px;
+      top: 55%;
+    }
+  }
+
+  @media (max-height: 431px) and (max-width: 1000px) {
+    .contenedor{
+      width: 100%;
+      height: 15%;
+    }
+
+    .img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .modal-1-modal {
+      top: 60%;
+    }
+
+    .scrolldeimagen {
+      width: 100%;
+      height: 120px;
+      overflow: auto;
+      position: relative;
+    }
+  }
+  
+  .modal-1-overlay.open .modal-1-modal {
+    opacity: 1;
+    visibility: visible;
+    animation: modal-in 1s;
+  }
+  
+  .modal-1-modal header {
+    background: linear-gradient(90deg, #2c406d, #223153);
+    margin: -25px -20px 30px;
+    border-radius: 12px;
+    height: 50px;
+    display: flex;
+    color: #d3d9ee;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    box-shadow: 0 16px 30px rgb(0 0 0 / 12%);
+  }

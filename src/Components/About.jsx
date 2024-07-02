@@ -2,6 +2,7 @@ import React from 'react';
 import backend from '../Images/backendImage.png';
 import frontend from '../Images/frontendImage.png';
 import sistemas from '../Images/sistemasImage.png';
+import { Modal1 } from './CVModal';
 
 const About = () => {
   return (
@@ -11,17 +12,18 @@ const About = () => {
       </div>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 xs:grid-cols-1 gap-8 relative z-10 justify-center items-center xs:mt-6 md:mt-4 lg:mt-0'>
-        <div className="bg-reno-600 rounded-lg shadow-lg md:col-span-2 lg:col-span-3 lg:mx-80 lg:mt-10 md:mx-44 md:mt-4 xs:mx-4 p-9">
+        <div className="flex justify-center items-center flex-col bg-reno-600 rounded-lg shadow-lg md:col-span-2 lg:col-span-3 lg:mx-80 lg:mt-10 md:mx-44 md:mt-4 xs:mx-4 p-9">
           <h2 className='text-white text-lg md:text-xl font-semibold mb-4'>
             ¡Hola! Soy Juan Ignacio.
           </h2>
-          <p className='text-reno-50 text-base md:text-lg leading-relaxed'>
+          <p className='text-reno-50 text-base md:text-lg leading-relaxed text-justify'>
             Bienvenidos a mi espacio. Soy un apasionado estudiante de Ingeniería en Sistemas con una sólida experiencia en programación y desarrollo de software. Mi objetivo es aplicar mis habilidades para crear soluciones innovadoras y contribuir al avance tecnológico en cualquier empresa.
           </p>
+          <Modal1/>
         </div>
 
         <div className="md:col-span-2 lg:col-span-3 bg-reno-600 mx-4 md:mx-8 rounded-lg shadow-lg p-6 xs:mb-10 md:mb-10 lg:mb-10 lg:mx-64">
-          <h2 className='text-white text-center text-3xl md:text-3xl underline underline-offset-4 font-bold mb-6'>Roles</h2>
+          <h2 className='text-white text-center text-3xl md:text-2xl hover:underline hover:underline-offset-4 font-bold mb-6'>Roles</h2>
           <div className='flex justify-center flex-wrap gap-6 text-center'>
             <div className='bg-white rounded-lg shadow-md xl:w-1/3 md:w-3/5 xs:w-3/4 p-2'>
               <h3 className='text-reno-900 text-lg md:text-xl font-semibold mb-4'>Estudiante de Ing. En Sistemas</h3>

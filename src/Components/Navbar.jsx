@@ -108,7 +108,7 @@ const Navbar = () => {
                       </Link>
                     </ListItem>
                     <ListItem>
-                      <Link to="proyect" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
+                      <Link to="project" smooth={true} duration={500} offset={-70} className='group transition-all duration-300 ease-in-out'>
                         <label onClick={handleDrawerCloseMax} className='text-3xl font-bold bg-left-bottom bg-gradient-to-r from-reno-200 to-reno-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_3px] pb-2 transition-all duration-500 ease-out'>
                           PROYECTOS
                         </label>
@@ -171,7 +171,7 @@ const Navbar = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link to="proyect" smooth={true} duration={500} offset={-80}>
+            <Link to="project" smooth={true} duration={500} offset={-80}>
               <label onClick={handleDrawerClose} style={{ fontWeight: 'bold' }}>
                 PROYECTOS
               </label>

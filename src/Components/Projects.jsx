@@ -7,6 +7,7 @@ import { CardActionArea } from '@mui/material';
 import imagenAppFolledo from "../Images/imagenAppFolledo.JPG";
 import tp2sim from '../Images/tp2sim.png'
 import tpmontecarlo from '../Images/tpmontecarlosim.png'
+import '../Styles/projects.css'
 
 const Projects = () => {
   const projectsData = [
@@ -45,7 +46,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="proyect" className="bg-reno-900 flex flex-col text-reno-950">
+    <div id="project" className="bg-reno-900 flex flex-col text-reno-950">
       <div className="flex md:justify-start py-6 xs:justify-center xs:items-center bg-gradient-to-l from-reno-950 to-reno-800 h-32">
         <span className="text-4xl mt-4 md:ml-5 xs:my-2 font-semibold text-white">
           Proyectos
@@ -57,7 +58,7 @@ const Projects = () => {
           {projectsData.map(project => (
             <Card key={project.id} sx={{ maxWidth: 385, boxShadow: '0px 5px 20px black', backgroundColor: '#2c406d' }} className="m-2 flex flex-col justify-between">
               <CardActionArea>
-                <CardMedia component="img" className="h-56" image={project.imageUrl} alt="Image proyect" />
+                <CardMedia component="img" className="h-56 imagencarta" image={project.imageUrl} alt="Image proyect" />
                 <div className="flex justify-center flex-col bg-reno-600">
                   <div className="mt-3 mb-1 ml-4 mr-4">
                     <h1 className="text-white font-bold text-2xl">
