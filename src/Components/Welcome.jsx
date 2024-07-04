@@ -1,29 +1,29 @@
 import React from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import imagenCiudad from '../Images/imagenCiudad.jpg';
-import imagenJuani2 from '../Images/fotoJuani.png'
-import { FaHandPointDown } from "react-icons/fa6";
+import { FaHandPointDown } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+
+import cityImage from '../Images/imagenCiudad.jpg';
+import profileImage from '../Images/fotoJuani.png';
 
 const Welcome = () => {
   return (
-    <div id='inicio' className='relative h-screen overflow-hidden'>
+    <div id="inicio" className="relative h-screen overflow-hidden">
       <ParallaxBanner
-        layers={[
-          { image: imagenCiudad, speed: 15 },
-        ]}
-        style={{
-          height: '100%',
-          width: '100%'
-        }}
+        layers={[{ image: cityImage, speed: 15 }]}
+        style={{ height: '100%', width: '100%' }}
       >
-        <div className="absolute inset-0 flex md:justify-start xs:justify-center items-center text-center text-white">
-          <div className="bg-reno-950 bg-opacity-80 xs:p-8 cel:p-4 xs:mx-10 md:mx-0 xs:rounded-2xl md:rounded-none md:w-1/2 md:h-full flex justify-center items-center flex-col">
-            <img src={imagenJuani2} alt="Juan Ignacio Andrada Cabo" className="xs:w-40 xs:h-40 md:w-32 md:h-32 xl:w-52 xl:h-52 rounded-full mb-4 mx-auto object-cover object-top" />
+        <div className="absolute inset-0 flex items-center text-white">
+          <div className="w-full md:w-1/2 p-8 md:p-4 bg-black bg-opacity-80 flex flex-col items-center justify-center h-full">
+            <img
+              src={profileImage}
+              alt="Juan Ignacio Andrada Cabo"
+              className="xs:w-44 xs:h-44 md:w-40 md:h-40 rounded-full mb-4 object-cover object-top"
+            />
             <h1 className="text-2xl md:text-3xl font-bold mb-2">Juan Ignacio Andrada Cabo</h1>
             <p className="text-lg md:text-xl mb-6">Desarrollador Full Stack</p>
-            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="text-lg md:text-xl flex items-center hover:cursor-pointer">
-              <FaHandPointDown className="w-8 h-8 animate-bounce"/>
+            <Link to="about" spy smooth offset={-70} duration={500} className="flex items-center text-lg md:text-xl cursor-pointer">
+              <FaHandPointDown className="w-7 h-7 md:w-8 md:h-8 animate-bounce"/>
             </Link>
           </div>
         </div>

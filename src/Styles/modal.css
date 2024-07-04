@@ -1,0 +1,13 @@
+.MuiDialogTitle-root {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .MuiDialogContentText-root {
+    font-size: 1.2rem;
+  }
+  
+  .MuiButton-containedPrimary {
+    background-color: #007bff;
+  }
+  

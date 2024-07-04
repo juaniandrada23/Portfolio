@@ -2,7 +2,7 @@ import React from 'react';
 import backend from '../Images/backendImage.png';
 import frontend from '../Images/frontendImage.png';
 import sistemas from '../Images/sistemasImage.png';
-import { Modal1 } from './CVModal';
+import Modal from './Techs/Modal'
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
           <p className='text-reno-50 text-base md:text-lg leading-relaxed text-justify'>
             Bienvenidos a mi espacio. Soy un apasionado estudiante de Ingeniería en Sistemas con una sólida experiencia en programación y desarrollo de software. Mi objetivo es aplicar mis habilidades para crear soluciones innovadoras y contribuir al avance tecnológico en cualquier empresa.
           </p>
-          <Modal1/>
+          <Modal/>
         </div>
 
         <div className="md:col-span-2 lg:col-span-3 bg-reno-600 mx-4 md:mx-8 rounded-lg shadow-lg p-6 xs:mb-10 md:mb-10 lg:mb-10 lg:mx-64">
