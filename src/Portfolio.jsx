@@ -6,7 +6,7 @@ import About from './Components/About.jsx'
 import Tech from './Components/Tech.jsx'
 import Experience from './Components/Experience.jsx'
 import Contact from './Components/Contact.jsx'
-import Projects from './Components/Projects.jsx'
+import Proyects from './Components/Proyects.jsx'
 import './Styles/portfolio.css'
 
 const Portfolio = () => {
@@ -17,7 +17,7 @@ const Portfolio = () => {
       <About id="about"/>
       <Tech id='tech'/>
       <Experience id='xp'/>
-      <Projects id='project'/>
+      <Proyects id='proyect'/>
       <Contact id='contact'/>
     <Footer/>
     </>

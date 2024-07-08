@@ -12,7 +12,6 @@ import javascript from "../Images/experience/javascript.jpg";
 
 const Experience = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [dialogMessage, setDialogMessage] = useState("");
   const [titleMessage, setTitleMessage] = useState("");
   const [imageMessage, setImageMessage] = useState("");
 
@@ -22,34 +21,29 @@ const Experience = () => {
       date: "2019-ACT",
       description:
         "Estudiante de la carrera de Ing. En Sistemas de Informacion",
-      message: "Mensaje para la experiencia 1",
       image: "",
     },
     {
       logo: UTN,
       date: "2020-2021",
       description: "Curso introductorio de Javascript",
-      message: "Mensaje para la experiencia 2",
       image: javascript,
     },
     {
       logo: UTN,
       date: "2021",
       description: "Curso introductorio de Blockchain",
-      message: "Mensaje para la experiencia 3",
       image: blockchain,
     },
     {
       logo: UTN,
       date: "2021-2022",
       description: "Programador FullStack",
-      message: "Mensaje para la experiencia 4",
       image: fullstack,
     },
   ];
 
-  const handleButtonClick = (message, description, image) => {
-    setDialogMessage(message);
+  const handleButtonClick = (description, image) => {
     setTitleMessage(description);
     setImageMessage(image);
     setModalOpen(true);
@@ -87,11 +81,11 @@ const Experience = () => {
                   <h1>{experience.description}</h1>
                   <div className="flex justify-end mt-2">
                     <button
-                      className={`bg-reno-800 p-1 px-2 rounded-xl text-reno-50 hover:bg-reno-50 border-2 hover:border-reno-700 hover:text-reno-950 transition duration-500 ${index === 0 ? "opacity-50 cursor-not-allowed" : ""
-                        }`}
+                      className={`bg-reno-800 p-1 px-2 rounded-xl text-reno-50 hover:bg-reno-50 border-2 hover:border-reno-700 hover:text-reno-950 transition duration-500 ${
+                        index === 0 ? "opacity-50 cursor-not-allowed" : ""
+                      }`}
                       onClick={() =>
                         handleButtonClick(
-                          experience.message,
                           experience.description,
                           experience.image
                         )
@@ -113,7 +107,6 @@ const Experience = () => {
           {titleMessage}
         </div>
         <DialogContent>
-          <h1>{dialogMessage}</h1>
           <img src={imageMessage} alt="Imagen del certificado" />
         </DialogContent>
         <DialogActions

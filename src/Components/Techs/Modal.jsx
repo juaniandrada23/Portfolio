@@ -7,7 +7,7 @@ import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
+  return <Slide direction="up" ref={ref} {...props} timeout={{ appear: 0, enter: 1500, exit: 1500 }} />;
 });
 
 const Modal = () => {
