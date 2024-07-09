@@ -9,8 +9,12 @@ import DialogActions from "@mui/material/DialogActions";
 import blockchain from "../Images/experience/blockchain.jpg";
 import fullstack from "../Images/experience/fullstack.jpg";
 import javascript from "../Images/experience/javascript.jpg";
+import { motion } from "framer-motion";
+import useAnimateOnInView from "../Hooks/useAnimateOnInView";
+import { variants3 } from "../Hooks/variants";
 
 const Experience = () => {
+  const { ref, controls } = useAnimateOnInView();
   const [modalOpen, setModalOpen] = useState(false);
   const [titleMessage, setTitleMessage] = useState("");
   const [imageMessage, setImageMessage] = useState("");
@@ -63,7 +67,13 @@ const Experience = () => {
       </ParallaxBanner>
 
       <div className="flex justify-center items-center flex-col bg-gradient-to-t from-reno-900 to-reno-800">
-        <div className="bg-reno-600 p-4 xs:my-10 xs:mx-6 md:mx-0 md:my-16 rounded-r-3xl rounded-es-3xl shadow-md shadow-black">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants3}
+          className="bg-reno-600 p-4 xs:my-10 xs:mx-6 md:mx-0 md:my-16 rounded-r-3xl rounded-es-3xl shadow-md shadow-black"
+        >
           <div className="border-l-4 border-reno-400 m-4">
             {experiences.map((experience, index) => (
               <div key={index}>
@@ -99,7 +109,7 @@ const Experience = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <Dialog open={modalOpen} onClose={() => setModalOpen(false)}>
