@@ -3,4 +3,5 @@
         black 80%, 
         transparent
     );
+    object-fit: contain;
 }

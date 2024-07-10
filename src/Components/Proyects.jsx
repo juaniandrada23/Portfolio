@@ -12,7 +12,7 @@ const projectsData = [
     id: 1,
     title: "Gestión de Balances",
     description:
-      "Simplifica el seguimiento de gastos e ingresos con proveedores...",
+      "Simplifica el seguimiento de gastos e ingresos con proveedores",
     imageUrl: require("../Images/imagenAppFolledo.JPG"),
     webLink: "URL del proyecto",
     githubLink: "https://github.com/juaniandrada23/proyectogestionfolledo",
@@ -20,7 +20,7 @@ const projectsData = [
   {
     id: 2,
     title: "Simulación Montecarlo",
-    description: "Trabajo realizado sobre el método de Montecarlo...",
+    description: "Trabajo realizado sobre el método de Montecarlo",
     imageUrl: require("../Images/tpmontecarlosim.png"),
     webLink: "URL del proyecto",
     githubLink: "https://github.com/juaniandrada23/tp2simulacion",
@@ -29,7 +29,7 @@ const projectsData = [
     id: 3,
     title: "Variables aleatorias",
     description:
-      "Trabajo realizado sobre la generación de variables aleatorias...",
+      "Trabajo realizado sobre la generación de variables aleatorias",
     imageUrl: require("../Images/tp2sim.png"),
     webLink: "URL del proyecto",
     githubLink: "https://github.com/juaniandrada23/tp3simulacion",
@@ -37,7 +37,7 @@ const projectsData = [
   {
     id: 4,
     title: "Landing Page",
-    description: "Página estática para una empresa familiar...",
+    description: "Página estática para una empresa familiar",
     imageUrl: require("../Images/imagenAppFolledo.JPG"),
     webLink: "URL del proyecto",
     githubLink: "URL del repositorio en GitHub",
@@ -76,7 +76,7 @@ const Projects = () => (
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  className="h-56 imagencarta"
+                  className="h-60 imagencarta"
                   image={project.imageUrl}
                   alt="Image proyect"
                 />

@@ -4,7 +4,7 @@ import frontend from "../Images/frontendImage.png";
 import sistemas from "../Images/sistemasImage.png";
 import Modal from "./Techs/Modal";
 import { motion } from "framer-motion";
-import useAnimateOnInView from "../Hooks/useAnimateOnInView";
+import useAnimateOnInViewBefore from "../Hooks/useAnimateOnViewBefore";
 import { variants, variants2 } from "../Hooks/variants";
 
 const roles = [
@@ -26,7 +26,7 @@ const roles = [
 ];
 
 const About = () => {
-  const { ref, controls } = useAnimateOnInView();
+  const { ref, controls } = useAnimateOnInViewBefore();
 
   return (
     <div id="about" className="md:min-h-screen xs:min-h-0 bg-reno-700 relative">
