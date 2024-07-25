@@ -3,7 +3,6 @@ import backend from "../Images/backendImage.png";
 import frontend from "../Images/frontendImage.png";
 import sistemas from "../Images/sistemasImage.png";
 import Modal from "./Techs/Modal";
-import { motion } from "framer-motion";
 import useAnimateOnInViewBefore from "../Hooks/useAnimateOnViewBefore";
 import { variants, variants2 } from "../Hooks/variants";
 
