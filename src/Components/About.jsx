@@ -37,7 +37,7 @@ const About = () => {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xs:grid-cols-1 gap-8 relative z-10 justify-center items-center xs:mt-6 md:mt-4 lg:mt-0">
-        <motion.div
+        <div
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -55,9 +55,9 @@ const About = () => {
             cualquier empresa.
           </p>
           <Modal />
-        </motion.div>
+        </div>
 
-        <motion.div
+        <div
           ref={ref}
           initial="hidden"
           animate={controls}
@@ -84,7 +84,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-full z-0">
