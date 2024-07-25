@@ -9,7 +9,7 @@ import "../Styles/projects.css";
 const projectsData = [
   {
     id: 1,
-    title: "Gestión de Balances",
+    title: "Gestión de Balances Folledo",
     description:
       "Simplifica el seguimiento de gastos e ingresos con proveedores",
     imageUrl: require("../Images/imagenAppFolledo.JPG"),
@@ -32,6 +32,15 @@ const projectsData = [
     imageUrl: require("../Images/tp2sim.png"),
     webLink: "URL del proyecto",
     githubLink: "https://github.com/juaniandrada23/tp3simulacion",
+  },
+  {
+    id: 4,
+    title: "Ecommerce Joyas",
+    description:
+      "Proyecto personal de gestion administrativa y ventas de joyeria",
+    imageUrl: require("../Images/ecommerce.png"),
+    webLink: "URL del proyecto",
+    githubLink: "https://github.com/juaniandrada23/newApp",
   },
 ];
 
