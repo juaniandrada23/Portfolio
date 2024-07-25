@@ -64,7 +64,7 @@ const techs = [
   },
   {
     icon: <FaAws className='w-auto h-auto' />,
-    h1: "Amazon Web Services",
+    h1: "AWS",
     nivel: 2,
     experiencia: 20
   }
