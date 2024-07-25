@@ -278,7 +278,7 @@ const Navbar = () => {
           </div>
           <div className="border-l-4 border-reno-300 ml-2">
             <ListItem>
-              <Link to="about" smooth={true} duration={500} offset={-79}>
+              <Link to="about" smooth={true} duration={500} offset={-69}>
                 <label
                   onClick={handleDrawerClose}
                   style={{ fontWeight: "bold" }}

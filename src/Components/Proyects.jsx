@@ -2,7 +2,6 @@ import React from "react";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
-import { MdOutlineWeb } from "react-icons/md";
 import { FaGithubAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "../Styles/projects.css";
@@ -84,14 +83,14 @@ const Projects = () => (
                 </div>
               </CardActionArea>
               <div className="flex justify-start items-center bg-reno-600">
-                <a
+                {/*<a
                   href={project.webLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-reno-800 hover:bg-reno-50 hover:text-reno-900 transition duration-700 text-white font-normal p-2 ml-2 my-2 rounded-3xl"
                 >
                   <MdOutlineWeb className="w-6 h-6" />
-                </a>
+                </a>*/}
                 <a
                   href={project.githubLink}
                   target="_blank"
