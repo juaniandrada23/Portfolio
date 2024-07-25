@@ -34,14 +34,6 @@ const projectsData = [
     webLink: "URL del proyecto",
     githubLink: "https://github.com/juaniandrada23/tp3simulacion",
   },
-  {
-    id: 4,
-    title: "Landing Page",
-    description: "Página estática para una empresa familiar",
-    imageUrl: require("../Images/imagenAppFolledo.JPG"),
-    webLink: "URL del proyecto",
-    githubLink: "URL del repositorio en GitHub",
-  },
 ];
 
 const Projects = () => (

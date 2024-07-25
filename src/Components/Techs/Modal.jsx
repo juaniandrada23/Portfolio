@@ -7,7 +7,7 @@ import {
   Slide,
 } from "@mui/material";
 import { FiEye, FiX, FiDownload } from "react-icons/fi";
-import imagenCV from "../../Images/cv.png";
+import imagenCV from "../../Images/CV.jpg";
 import "../../Styles/modal.css";
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
